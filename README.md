@@ -32,7 +32,7 @@ or that can be repeated, for example:
     // 5 provided as argument at compile-time -> Sized of length 5 in the return type
 ```
    
-In the above, `splitH(3, ...)` tries to split `s` into 3 elements. `splitH` ends in `H` so it will
+In the above, `splitH(3, ...)` tries to split `str` into 3 elements. `splitH` ends in `H` so it will
 try to return a `HList`. If it succeeds, it returns
 `Some(firstFoundElement :: secondFoundElement :: thirdFoundElement :: HNil)`, and it returns `None` if it fails. 
 `findT` and `findS` also exist, where the 3-length `HList` is replaced by a tuple (`(Double, Double, Double)`) 
@@ -43,7 +43,7 @@ The returned values can be matched straight away, like in:
 ```scala
     it.groupedT(2).map{ case (previous, current) => ... }
    
-    s.splitT(3, ";") match {
+    str.splitT(3, ";") match {
       case None => // failed
       case Some((first, second, third)) => // success
     }
@@ -54,7 +54,7 @@ Whereas using the standard library methods, one would have had to write
 ```scala  
     it.grouped(2).withPartial(false).map{ t => (t(0), t(1)) }.map{case (first, second) => ...}
    
-    Some(s.split(";", 3)).filter(_.length == 3).map(t => (t(0), t(1), t(2))) match {
+    Some(str.split(";", 3)).filter(_.length == 3).map(t => (t(0), t(1), t(2))) match {
       case None => ...
       case Some((first, second, third)) => ...
     }
