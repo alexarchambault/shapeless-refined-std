@@ -1,9 +1,9 @@
-# shapeless-pimped-std
+# shapeless-refined-std
 
-*Pimping the standard library with shapeless*
+*Adding type-level sweetness to the standard library*
 
 
-**shapeless-pimped-std** is an attempt at pimping the standard library, collections mostly, using the typelevel collections:
+**shapeless-refined-std** enriches the standard library, collections mostly, using the typelevel collections:
 tuples, shapeless' `HList` and `Sized`.
 
 Whenever possible, it provides alternatives with stronger types to standard library collections' methods that can either 
@@ -69,13 +69,13 @@ Add to your `build.sbt`
 ```scala
     resolvers += Resolver.sonatypeRepo("snapshots")
 
-    libraryDependencies += "com.github.alexarchambault" %% "shapeless-pimped-std" % "0.1.0-SNAPSHOT"
+    libraryDependencies += "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.0-SNAPSHOT"
 ```
 
 Then in your sources:
 
 ```scala
-    import shapeless.pimpedstd.syntax._
+    import shapeless.refinedstd.syntax._
     
      /* New methods ending in ...T (tuples), ...H (HList), or ...S (Sized),
       * are available on instances of TraversableOnce, Iterator, TraversableLike,
@@ -89,13 +89,13 @@ snapshot version of shapeless (2.1.0-SNAPSHOT).
 
 ## Internals
 
-These methods are backed by dependent functions (shapeless' `DepFn`*), available in the `shapeless.pimpedstd.ops`
+These methods are backed by dependent functions (shapeless' `DepFn`*), available in the `shapeless.refinedstd.ops`
 namespace, à la shapeless.
 
 ## Compiling
 
 Compiling requires [my customized version](https://github.com/alexarchambault/sbt-boilerplate) of [sbt-boilerplate](https://github.com/sbt/sbt-boilerplate).
-Clone it and publish it locally prior to compiling shapeless-pimped-std.
+Clone it and publish it locally prior to compiling shapeless-refined-std.
 
 ## Notice
 

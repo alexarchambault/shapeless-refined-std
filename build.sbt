@@ -4,7 +4,7 @@ import _root_.sbtbuildinfo.Plugin.BuildInfoKey
 
 import com.typesafe.sbt.SbtGit.GitKeys._
 
-name := "shapeless-pimped-std"
+name := "shapeless-refined-std"
 
 organization := "com.github.alexarchambault"
 
@@ -47,7 +47,7 @@ buildInfoKeys := Seq[BuildInfoKey](
   }
 )
 
-buildInfoPackage := "shapeless.pimpedstd"
+buildInfoPackage := "shapeless.refinedstd"
 
 profileName := "alexandre.archambault"
 
@@ -64,7 +64,7 @@ publishTo := {
 }
 
 pomExtra := {
-  <url>https://github.com/alexarchambault/shapeless-pimped-std</url>
+  <url>https://github.com/alexarchambault/shapeless-refined-std</url>
   <licenses>
     <license>
       <name>Apache 2.0</name>
@@ -72,9 +72,9 @@ pomExtra := {
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:github.com/alexarchambault/shapeless-pimped-std.git</connection>
-    <developerConnection>scm:git:git@github.com:alexarchambault/shapeless-pimped-std.git</developerConnection>
-    <url>github.com/alexarchambault/shapeless-pimped-std.git</url>
+    <connection>scm:git:github.com/alexarchambault/shapeless-refined-std.git</connection>
+    <developerConnection>scm:git:git@github.com:alexarchambault/shapeless-refined-std.git</developerConnection>
+    <url>github.com/alexarchambault/shapeless-refined-std.git</url>
   </scm>
   <developers>
     <developer>
