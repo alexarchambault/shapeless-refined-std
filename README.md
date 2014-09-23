@@ -97,7 +97,9 @@ namespace, à la shapeless.
 Compiling requires [my customized version](https://github.com/alexarchambault/sbt-boilerplate) of [sbt-boilerplate](https://github.com/sbt/sbt-boilerplate).
 Clone it and publish it locally prior to compiling shapeless-refined-std.
 
-## Notice
+---
+
+Thanks to [@milessabin](https://twitter.com/milessabin) for the suggestion of the name "shapeless-refined-std".
 
 Copyright (c) 2014 Alexandre Archambault. See LICENSE file for more details.
 
