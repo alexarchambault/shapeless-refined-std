@@ -1,6 +1,6 @@
 # shapeless-refined-std
 
-*Adding type-level sweetness to the standard library*
+*Standard collections with a type-level twist*
 
 
 **shapeless-refined-std** enriches the standard library, collections mostly, using the typelevel collections:
@@ -99,7 +99,7 @@ Clone it and publish it locally prior to compiling shapeless-refined-std.
 
 ---
 
-Thanks to [@milessabin](https://twitter.com/milessabin) for the suggestion of the name "shapeless-refined-std".
+Thanks to [@milessabin](https://github.com/milessabin/) for the suggestion of the name "shapeless-refined-std".
 
 Copyright (c) 2014 Alexandre Archambault. See LICENSE file for more details.
 
