@@ -83,8 +83,7 @@ Then in your sources:
       */
 ```
 
-Only for scala 2.11 for now, a (possibly lighter) version for scala 2.10 is being prepared. Depends on the current 
-snapshot version of shapeless (2.1.0-SNAPSHOT).
+Only for scala 2.11 for now, a (possibly lighter) version for scala 2.10 is being prepared. Depends on shapeless 2.1.0-RC1.
 
 
 ## Internals

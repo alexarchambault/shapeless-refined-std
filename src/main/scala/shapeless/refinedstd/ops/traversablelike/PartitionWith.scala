@@ -17,7 +17,7 @@
 package shapeless.refinedstd.ops.traversablelike
 
 import language.higherKinds
-import shapeless._, record._
+import shapeless._, labelled._
 import scala.collection.{ TraversableLike, mutable }
 import shapeless.refinedstd.ops.BuiltOutOf
 import shapeless.refinedstd.util.BuildFrom
