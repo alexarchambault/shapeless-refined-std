@@ -4,7 +4,7 @@ organization := "com.github.alexarchambault"
 
 name := "shapeless-refined-std"
 
-version := "0.1.0-SNAPSHOT"
+version := "0.1.0"
 
 scalaVersion := "2.11.5"
 

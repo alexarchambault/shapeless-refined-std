@@ -67,13 +67,8 @@ Available methods are illustrated in the tests, under `src/test`.
 Add to your `build.sbt`
 
 ```scala
-resolvers ++= Seq(
-  Resolver.sonatypeRepo("releases"),
-  Resolver.sonatypeRepo("snapshots")
-)
-
 libraryDependencies +=
-  "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.0-SNAPSHOT"
+  "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.0"
 ```
 
 Then in your sources:
