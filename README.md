@@ -1,6 +1,6 @@
 # shapeless-refined-std
 
-*Standard collections with a type-level twist*
+*Type-level API for standard collections*
 
 
 **shapeless-refined-std** enriches the standard library, collections mostly, using the typelevel collections:
