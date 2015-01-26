@@ -1,0 +1,3 @@
+Initial release:
+
+* Type-level methods for standard collections
