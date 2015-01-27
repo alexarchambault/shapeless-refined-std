@@ -1,7 +1,5 @@
 # shapeless-refined-std
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexarchambault/shapeless-refined-std?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 *Type-level API for standard collections*
 
 
@@ -104,3 +102,5 @@ Thanks to [@milessabin](https://github.com/milessabin/) for the suggestion of th
 Copyright (c) 2014-2015 Alexandre Archambault. See LICENSE file for more details.
 
 Released under Apache 2.0 license.
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexarchambault/shapeless-refined-std?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
