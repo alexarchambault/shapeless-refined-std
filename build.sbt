@@ -1,10 +1,6 @@
-import SonatypeKeys._
-
 organization := "com.github.alexarchambault"
 
 name := "shapeless-refined-std"
-
-version := "0.1.0"
 
 scalaVersion := "2.11.5"
 
@@ -44,14 +40,10 @@ publishTo := {
     Some("releases"  at nexus + "service/local/staging/deploy/maven2")
 }
 
+licenses := Seq("Apache 2.0" -> url("http://opensource.org/licenses/Apache-2.0"))
+
 pomExtra := {
   <url>https://github.com/alexarchambault/shapeless-refined-std</url>
-  <licenses>
-    <license>
-      <name>Apache 2.0</name>
-      <url>http://opensource.org/licenses/Apache-2.0</url>
-    </license>
-  </licenses>
   <scm>
     <connection>scm:git:github.com/alexarchambault/shapeless-refined-std.git</connection>
     <developerConnection>scm:git:git@github.com:alexarchambault/shapeless-refined-std.git</developerConnection>
@@ -65,4 +57,21 @@ pomExtra := {
     </developer>
   </developers>
 }
+
+credentials += {
+  Seq("SONATYPE_USER", "SONATYPE_PASS").map(sys.env.get) match {
+    case Seq(Some(user), Some(pass)) =>
+      Credentials("Sonatype Nexus Repository Manager", "oss.sonatype.org", user, pass)
+    case _ =>
+      Credentials(Path.userHome / ".ivy2" / ".credentials")
+  }
+}
+
+releaseSettings
+
+ReleaseKeys.versionBump := sbtrelease.Version.Bump.Bugfix
+
+sbtrelease.ReleasePlugin.ReleaseKeys.publishArtifactsAction := PgpKeys.publishSigned.value
+
+scalacOptions += "-target:jvm-1.7"
 
