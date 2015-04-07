@@ -9,19 +9,17 @@ scalacOptions ++= Seq("-feature", "-deprecation")
 resolvers += Resolver.sonatypeRepo("releases")
 
 libraryDependencies ++= Seq(
+  "com.chuusai" %% "shapeless" % "2.2.0-RC4",
   "org.scalatest"  %% "scalatest" % "2.2.0" % "test"
 )
 
 libraryDependencies ++= {
   if (scalaVersion.value startsWith "2.10.")
     Seq(
-      "com.chuusai" %% "shapeless" % "2.1.0" cross CrossVersion.full,
       compilerPlugin("org.scalamacros" % "paradise" % "2.0.1" cross CrossVersion.full)
     )
   else
-    Seq(
-      "com.chuusai" %% "shapeless" % "2.1.0"
-    )
+    Seq()
 }
 
 Boilerplate.settings
