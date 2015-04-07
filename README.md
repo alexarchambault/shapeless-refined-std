@@ -104,16 +104,10 @@ Only for scala 2.11 for now, a (possibly lighter) version for scala 2.10 is bein
 These methods are backed by dependent functions (shapeless' `DepFn`*), available in the `shapeless.refinedstd.ops`
 namespace, à la shapeless.
 
-## Compiling
-
-Compiling requires [my customized version](https://github.com/alexarchambault/sbt-boilerplate) of [sbt-boilerplate](https://github.com/sbt/sbt-boilerplate).
-Clone it and publish it locally prior to compiling shapeless-refined-std.
-
----
-
-Thanks to [@milessabin](https://github.com/milessabin/) for the suggestion of the name "shapeless-refined-std".
+## Notice
 
 Copyright (c) 2014-2015 Alexandre Archambault. See LICENSE file for more details.
 
 Released under Apache 2.0 license.
 
+Thanks to [@milessabin](https://github.com/milessabin/) for the suggestion of the name "shapeless-refined-std".
