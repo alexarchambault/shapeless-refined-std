@@ -15,12 +15,12 @@ libraryDependencies ++= Seq(
 libraryDependencies ++= {
   if (scalaVersion.value startsWith "2.10.")
     Seq(
-      "com.chuusai" %% "shapeless" % "2.1.0-RC1" cross CrossVersion.full,
+      "com.chuusai" %% "shapeless" % "2.1.0" cross CrossVersion.full,
       compilerPlugin("org.scalamacros" % "paradise" % "2.0.1" cross CrossVersion.full)
     )
   else
     Seq(
-      "com.chuusai" %% "shapeless" % "2.1.0-RC1"
+      "com.chuusai" %% "shapeless" % "2.1.0"
     )
 }
 
