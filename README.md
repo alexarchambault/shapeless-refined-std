@@ -69,8 +69,7 @@ Available methods are illustrated in the tests, under `src/test`.
 Add to your `build.sbt`
 
 ```scala
-libraryDependencies +=
-  "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.1"
+libraryDependencies += "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.1"
 ```
 
 For the development version, add instead
@@ -84,6 +83,8 @@ libraryDependencies +=
   "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.2-SNAPSHOT"
 ```
 
+If you are using shapeless 2.2, replace `0.1.2-SNAPSHOT` by `0.2.0-SNAPSHOT`.
+
 Then add in your sources:
 
 ```scala
@@ -95,7 +96,7 @@ import shapeless.refinedstd.syntax._
  */
 ```
 
-Only for scala 2.11 for now, a (possibly lighter) version for scala 2.10 is being prepared. Depends on shapeless 2.1.0-RC1.
+Only for scala 2.11 for now, a (possibly lighter) version for scala 2.10 is being prepared. Depends on shapeless 2.1.0.
 
 
 ## Internals
