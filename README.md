@@ -70,7 +70,7 @@ Add to your `build.sbt`
 
 ```scala
 libraryDependencies +=
-  "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.0"
+  "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.1"
 ```
 
 Then in your sources:
