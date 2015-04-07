@@ -73,7 +73,18 @@ libraryDependencies +=
   "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.1"
 ```
 
-Then in your sources:
+For the development version, add instead
+```scala
+resolvers ++= Seq(
+  Resolver.sonatypeRepo("releases"),
+  Resolver.sonatypeRepo("snapshots")
+)
+
+libraryDependencies +=
+  "com.github.alexarchambault" %% "shapeless-refined-std" % "0.1.2-SNAPSHOT"
+```
+
+Then add in your sources:
 
 ```scala
 import shapeless.refinedstd.syntax._
