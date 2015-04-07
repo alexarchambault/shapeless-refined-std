@@ -2,7 +2,7 @@ organization := "com.github.alexarchambault"
 
 name := "shapeless-refined-std"
 
-scalaVersion := "2.11.5"
+scalaVersion := "2.11.6"
 
 scalacOptions ++= Seq("-feature", "-deprecation")
 
