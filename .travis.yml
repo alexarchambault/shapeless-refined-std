@@ -4,7 +4,6 @@ scala:
 - 2.11.7
 
 jdk:
-- oraclejdk7
 - oraclejdk8
 
 script: sbt ++${TRAVIS_SCALA_VERSION} test $(if [[ "${TRAVIS_PULL_REQUEST}" == "false"
