@@ -1,10 +1,9 @@
 language: scala
 
 scala:
-- 2.11.6
+- 2.11.7
 
 jdk:
-- oraclejdk7
 - oraclejdk8
 
 script: sbt ++${TRAVIS_SCALA_VERSION} test $(if [[ "${TRAVIS_PULL_REQUEST}" == "false"
@@ -15,3 +14,6 @@ env:
   global:
   - secure: bWrz+M4KcjHkt3fmTNhrTsEvQ3IaYTsuD4jKROGG0yRO43JWb7RRtVA9wwEKDdTzDPKWdkeECm6M2rT7nd+349IcHd/7U/5fUIY6UMbKyE2nBAUrRBhPmxXitzfSmgndC7l0+7P63q28U0xWc9ZN5QCWDqy3STXX31xjklhewE4=
   - secure: FvzYBGwtB9mcnyLVNOgxaW8rRt9+6bgpKyD9CS6oyai+qIPGva9S4Pdeg95x0tQxB0op6KmYdc5E3CJOzQm8XgGwb3xXV3+c6dZrJ5PeExsn3KqK406f5eax+PlfwJEHpcfFwmQkzV2hDuVIG7QjAu+Dkqvx6F7FHBS6BOzLXhQ=
+branches:
+  only:
+  - master
